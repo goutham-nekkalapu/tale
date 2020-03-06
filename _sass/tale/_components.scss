@@ -86,6 +86,12 @@ button {
     text-align: center;
     margin-bottom: 20px;
 }
+
+.checkbox {
+    padding-right: 10px;
+    padding-bottom: 5px;
+    display: inline-block;
+}
 .checkbox input[type="checkbox"] {
     display: none;
 }
@@ -95,60 +101,67 @@ button {
     display: inline-block;
     
     /*16px width of fake checkbox + 6px distance between fake checkbox and text*/
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
 }
 
-.checkbox label::before,
-.checkbox label::after {
-    position: absolute;
-    content: "";
+.checkbox input[type="checkbox"]:checked + label{
+    background: black;
+    color: white;
+}
+
+// .checkbox label::before,
+// .checkbox label::after {
+//     position: absolute;
+//     content: "";
     
-    /*Needed for the line-height to take effect*/
-    display: inline-block;
-}
+//     /*Needed for the line-height to take effect*/
+//     display: inline-block;
+// }
 
-/*Outer box of the fake checkbox*/
-.checkbox label::before{
-    height: 13px;
-    width: 13px;
+// /*Outer box of the fake checkbox*/
+// .checkbox label::before{
+//     height: 13px;
+//     width: 13px;
     
-    border: 3px solid;
-    left: 0px;
+//     border: 3px solid;
+//     left: 0px;
     
-    /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
-     *to vertically center it.
-     */
-    top: 3px;
-}
+//     /*(24px line-height - 16px height of fake checkbox) / 2 - 1px for the border
+//      *to vertically center it.
+//      */
+//     top: 3px;
+// }
 
-/*Checkmark of the fake checkbox*/
-.checkbox label::after {
-    height: 5px;
-    width: 9px;
-    border-left: 2px solid;
-    border-bottom: 2px solid;
+// /*Checkmark of the fake checkbox*/
+// .checkbox label::after {
+//     height: 5px;
+//     width: 9px;
+//     border-left: 2px solid;
+//     border-bottom: 2px solid;
     
-    transform: rotate(-45deg);
+//     transform: rotate(-45deg);
     
-    left: 4px;
-    top: 7px;
-}
+//     left: 4px;
+//     top: 7px;
+// }
 
-/*Hide the checkmark by default*/
-.checkbox input[type="checkbox"] + label::after {
-    content: none;
-}
+// /*Hide the checkmark by default*/
+// .checkbox input[type="checkbox"] + label::after {
+//     content: none;
+// }
 
-/*Unhide on the checked state*/
-.checkbox input[type="checkbox"]:checked + label::after {
-    content: "";
-}
+// /*Unhide on the checked state*/
+// .checkbox input[type="checkbox"]:checked + label::after {
+//     content: "";
+// }
 
-/*Adding focus styles on the outer-box of the fake checkbox*/
-.checkbox input[type="checkbox"]:focus + label::before {
-    outline: rgb(59, 153, 252) auto 5px;
-}
+// /*Adding focus styles on the outer-box of the fake checkbox*/
+// .checkbox input[type="checkbox"]:focus + label::before {
+//     outline: rgb(59, 153, 252) auto 5px;
+// }
 
 
 

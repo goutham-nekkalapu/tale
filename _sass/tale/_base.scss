@@ -38,6 +38,9 @@ h6 {
 a {
   color: $blue;
   text-decoration: none;
+  &:hover {
+    color: darken($blue, 20%);
+  }
 }
 
 blockquote {

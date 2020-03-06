@@ -1,6 +1,6 @@
 ---
 layout: category
-title: "Categories"
+title: "Tags"
 author: "Chester"
 permalink: /category/
 ---

@@ -14,7 +14,7 @@ layout: default
     </span>
     {% endfor %}
   </div>
-  <button class="custom-btn btn-6" id="show-all-btn"><span>Show all categories</span></button>
+  <button class="custom-btn btn-6" id="show-all-btn"><span>Show all tags</span></button>
   {% for category in site.categories %}
   {% capture category_name %}{{ category | first }}{% endcapture %}
     <div id="{{ category_name | slugify }}" class="categories">
