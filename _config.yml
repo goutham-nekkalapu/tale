@@ -1,5 +1,6 @@
 # Site settings
 title: Tale
+site_title: "Easy blog"
 description: "Minimal Jekyll theme for storytellers"
 url: "https://vipulmahadik.github.io/tale/"
 
