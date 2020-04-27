@@ -36,7 +36,7 @@ exclude: [Gemfile, Gemfile.lock, tale.gemspec]
 # Disqus (Set to your disqus id)
 disqus: jekyll-tale
 
-theme: tale
+theme_name: tale
 
 permalink: /:year-:month-:day/:title
 paginate: 5
