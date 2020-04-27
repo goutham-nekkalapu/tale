@@ -5,7 +5,12 @@
 Tale is a minimal Jekyll theme curated for storytellers. This version of 'tale'theme add a few more features on 
 top of base version, checkout the demo [here](https://vipulmahadik.github.io/tale/).
 
-![Tale screenshot](http://i.imgur.com/pXZrtmo.png)
+# Contents
+- [Features](#Features)
+- [Installation](#Installation)
+- [Usage](#Usage)
+- [Customizations](#Customizations)
+- [Contributing](#Contributing)
 
 ## Features
 - Easy installation
@@ -123,9 +128,6 @@ disqus: jekyll-tale
 
 Next, add `comments: true` to the YAML front matter of the posts which you would like to enable comments for.
 
-## Contributing
-Found a bug or have a suggestion? Feel free to create an issue or make a pull request!
-
 ## Customizations
 
 - For adding "GA" tracking refer to this [link](https://desiredpersona.com/google-analytics-jekyll/)
@@ -144,10 +146,13 @@ Found a bug or have a suggestion? Feel free to create an issue or make a pull re
   - create/use a favicon from one of the free websites like [this one](https://favicon.io/), download the favicon images generated.
   - place the favicon.ico in main directory but all others in 'assets' directory
 
+  ### Making changes to any UI components
+  - Run the Jekyll blog on your local machine, open the blog in chrome, go to the UI component where you want to make a change, right click and select inspect page option. This would open google developer tools console for this page.
 
+  - Once the developer tools are open, play the variables like height, color etc for the UI component upto your satisfaction. Identify the class and file names to which the variables you are playing with belong to.
 
+  - Go to those files and update these class variables with the ones you decided from above step.
 
-
-
-
+## Contributing
+Found a bug or have a suggestion? Feel free to create an issue or make a pull request!
 
